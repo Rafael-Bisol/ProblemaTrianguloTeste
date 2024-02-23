@@ -15,19 +15,12 @@ namespace ProblemaTrianguloTeste
             y.B = 4.5;
             y.C = 4.02;
 
+            Console.WriteLine("Area de X: " + x.Area());
+            Console.WriteLine("Area de Y: " + y.Area());
 
-            double p = (x.A + x.B + x.C) / 2;
-            double areaX = Math.Sqrt(p * (p - x.A) * (p - x.B) * (p - x.C));
-
-            p = (y.A + y.B + y.C) / 2;
-            double areaY = Math.Sqrt(p * (p - y.A) * (p - y.B) * (p - y.C));
-
-            Console.WriteLine("Area de X: " + areaX);
-            Console.WriteLine("Area de Y: " + areaY);
-
-            if (areaX > areaY)
+            if (x.Area() > y.Area())
                 Console.WriteLine("areaX é maior que areaY");
-            else if (areaY > areaX)
+            else if (y.Area() > x.Area())
                 Console.WriteLine("areaY é maior que areaX");
             else
                 Console.WriteLine("areaX e areaY são iguais");
