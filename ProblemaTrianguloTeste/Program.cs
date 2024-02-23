@@ -6,19 +6,21 @@ namespace ProblemaTrianguloTeste
     {
         static void Main(string[] args)
         {
-            double xA, xB, xC, yA, yB, yC;
-            xA = 3;
-            xB = 4;
-            xC = 5;
-            yA = 7.5;
-            yB = 4.5;
-            yC = 4.02;
+            Triangulo x = new Triangulo();
+            Triangulo y = new Triangulo();
+            x.A = 3;
+            x.B = 4;
+            x.C = 5;
+            y.A = 7.5;
+            y.B = 4.5;
+            y.C = 4.02;
 
-            double p = (xA + xB + xC) / 2;
-            double areaX = Math.Sqrt(p * (p - xA) * (p - xB) * (p - xC));
 
-            p = (yA + yB + yC) / 2;
-            double areaY = Math.Sqrt(p * (p - yA) * (p - yB) * (p - yC));
+            double p = (x.A + x.B + x.C) / 2;
+            double areaX = Math.Sqrt(p * (p - x.A) * (p - x.B) * (p - x.C));
+
+            p = (y.A + y.B + y.C) / 2;
+            double areaY = Math.Sqrt(p * (p - y.A) * (p - y.B) * (p - y.C));
 
             Console.WriteLine("Area de X: " + areaX);
             Console.WriteLine("Area de Y: " + areaY);
