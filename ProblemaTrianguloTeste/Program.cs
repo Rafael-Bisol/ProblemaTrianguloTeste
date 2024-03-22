@@ -7,13 +7,15 @@ namespace ProblemaTrianguloTeste
         static void Main(string[] args)
         {
             Triangulo x = new Triangulo();
-            Triangulo y = new Triangulo();
             x.A = 3;
             x.B = 4;
             x.C = 5;
-            y.A = 7.5;
-            y.B = 4.5;
-            y.C = 4.02;
+
+            double yA, yB, yC;
+            yA = 7.5;
+            yB = 4.5;
+            yC = 4.02;
+            Triangulo y = new Triangulo(yA, yB, yC);
 
             Console.WriteLine("Area de X: " + x.Area());
             Console.WriteLine("Area de Y: " + y.Area());
