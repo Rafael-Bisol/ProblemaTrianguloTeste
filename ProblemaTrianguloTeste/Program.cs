@@ -11,11 +11,7 @@ namespace ProblemaTrianguloTeste
             x.B = 4;
             x.C = 5;
 
-            double yA, yB, yC;
-            yA = 7.5;
-            yB = 4.5;
-            yC = 4.02;
-            Triangulo y = new Triangulo(yA, yB, yC);
+            Triangulo y = new Triangulo(7.5, 4.5, 4.02);
 
             Console.WriteLine("Area de X: " + x.Area());
             Console.WriteLine("Area de Y: " + y.Area());

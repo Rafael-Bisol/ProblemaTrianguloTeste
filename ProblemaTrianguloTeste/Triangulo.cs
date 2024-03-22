@@ -27,6 +27,10 @@ namespace ProblemaTrianguloTeste
             this.B = B;
             this.C = C;
         }
+        public override string ToString()
+        {
+            return $"Lado 1: {A}\nLado 2: {B}\nLado 3: {C}";
+        }
     }
 }
 
